@@ -76,7 +76,7 @@ new Vue({
     },
 
     sendScore(data) {
-      fetch(`https://whack-a-mole-d24d1-default-rtdb.firebaseio.com/score.json`, {
+      fetch(`....`, {
         method: 'POST',
         body: JSON.stringify(data)
       }).then(res => {
@@ -90,7 +90,7 @@ new Vue({
     },
 
     getScores () {
-      fetch(`https://whack-a-mole-d24d1-default-rtdb.firebaseio.com/score.json`)
+      fetch(`....`)
       .then(res => {
         return res.json();
       }).then(data => {
